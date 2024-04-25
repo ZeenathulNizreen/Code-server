@@ -15,9 +15,9 @@ wget https://raw.githubusercontent.com/ZeenathulNizreen/Code-server/main/ngrok.p
 python ngrok.py --ngrok_auth_token $2
 
 # Tunnel given port to ngrok server with tmux session managemnet
-# tmux new -d -s mysession "source /root/FedAgg/.venv/bin/activate && /usr/bin/code-server --port $1 & ngrok http $1 & sleep 5s && cat /root/.config/code-server/config.yaml"
+tmux new -d -s mysession "source /root/FedAgg/.venv/bin/activate && /usr/bin/code-server --port $1 & ngrok http $1 & sleep 5s && cat /root/.config/code-server/config.yaml"
 
 # Tunnel given port to ngrok server
-ngrok http $1 & /usr/bin/code-server --port $1 & sleep 5s && cat /root/.config/code-server/config.yaml
+# ngrok http $1 & /usr/bin/code-server --port $1 & sleep 5s && cat /root/.config/code-server/config.yaml
 
 
