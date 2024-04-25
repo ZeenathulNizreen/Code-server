@@ -9,7 +9,7 @@ chmod +x install.sh
 pip install pyngrok fire
 
 # Download ngrok.py from this gist
-wget https://gist.githubusercontent.com/sachith-gunasekara/06ca96a0ff907415c3d94a09420c1e6c/raw/be236c014068a5cedcc3facda7b0f018c2682c16/ngrok.py
+wget https://raw.githubusercontent.com/ZeenathulNizreen/Code-server/main/ngrok.py
 
 # Set up ngrok with auth token
 python ngrok.py --ngrok_auth_token $2
